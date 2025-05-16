@@ -1,4 +1,5 @@
 For when users are having issues as admin they are not able to install updates, use fingerprint reader, etc
+Only change the usernames that are capitolized. Passwords options remain the same, the system will ask for them.
 
 # check status of users secure token
 sudo sysadminctl -secureTokenStatus USERNAME
