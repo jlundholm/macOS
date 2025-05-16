@@ -1,0 +1,13 @@
+For when users are having issues as admin they are not able to install updates, use fingerprint reader, etc
+
+# check status of users secure token
+sudo sysadminctl -secureTokenStatus USERNAME
+
+# Disable secure token
+sudo sysadminctl -secureTokenOff USERNAME -password - -adminUser ADMINUSER -adminPassword -
+
+# Enable secure token
+sudo sysadminctl -secureTokenOn USERNAME -password - -adminUser ADMINUSER -adminPassword  -
+
+# Update file system
+sudo diskutil apfs UpdatePreboot /
